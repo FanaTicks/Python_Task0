@@ -7,7 +7,7 @@
 
 Виконуємо завдання, зберігаємо всі зміни, додаємо коментар та пушимо.
 
-![image](https://user-images.githubusercontent.com/75033218/122219797-73f9ff00-ceb8-11eb-8a20-f13a5ba4907a.png)
+![image](https://user-images.githubusercontent.com/75033218/122220557-1914d780-ceb9-11eb-89bc-6525f74814f6.png)
 
 
 
