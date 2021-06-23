@@ -19,7 +19,8 @@ class Main(Frame):
             "7", "8", "9", "-",
             "(", "0", ")", "X^2",
             "cos","sin","tan","ctg",
-            "log","ln", "%", "bin"
+            "log","ln", "%", "bin",
+            "^"
         ]
 
         x = 10
@@ -63,8 +64,17 @@ class Main(Frame):
                 print(b)
                 print(a, b)
                 self.formula = str((a / 100) * b)
+            if '^' in self.formula:
+                print(self.formula)
+                a = float(self.formula.split('^')[0])
+                print(a)
+                b = float(self.formula.rsplit('^', 1)[-1])
+                print(b)
+                print(a, b)
+                self.formula = str(math.pow(a, b))
             else:
              self.formula = str(eval(self.formula))
+             math.pow(X, Y)
         else:
             if self.formula == "0":
                 self.formula = ""
@@ -80,7 +90,7 @@ class Main(Frame):
 if __name__ == '__main__':
     root = Tk()
     root["bg"] = "#000"
-    root.geometry("480x700")
+    root.geometry("480x800")
     root.title("Калькулятор")
     root.resizable(False, False)
     app = Main(root)
