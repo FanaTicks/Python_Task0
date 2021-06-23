@@ -19,16 +19,72 @@ res = conn.getresponse()
 data = res.read()
 coron = data.decode("utf-8")
 json = json.loads(coron)
-text = Text(width=500, height=500, fg='#FFFFFF', bg='#8B008B', font=("Arial Bold", 13))
+k="Error"
+c1="Morocco"
+c2="Tunisia"
+c3="Egypt"
+c4="Ethiopia"
+c5="Libya"
+text = Text(width=500, height=500, fg='#0000FF', bg='#DCDCDC', font=("Arial Bold", 23))
+label = Label(text="Имя")
+entry = Entry()
+label.pack()
+entry.pack()
 text.pack()
-for i in range(10):
-    text.insert('1.0', '\n')
-    text.insert('1.0', list(json[i].items())[14])
-    text.insert('1.0', '\n')
-    text.insert('1.0', list(json[i].items())[12])
-    text.insert('1.0', '\n')
-    text.insert('1.0', list(json[i].items())[10])
-    text.insert('1.0', '\n')
-    text.insert('1.0', list(json[i].items())[2])
+def clicked():
+    country = entry.get()
+    if country == c1:
+        for i in range(1, 2):
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[14])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[12])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[10])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[2])
+    elif country == c2:
+        for i in range(2, 3):
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[14])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[12])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[10])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[2])
+    elif country == c3:
+        for i in range(3, 4):
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[14])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[12])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[10])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[2])
+    elif country == c4:
+        for i in range(4, 5):
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[14])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[12])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[10])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[2])
+    elif country == c5:
+        for i in range(5, 6):
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[14])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[12])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[10])
+            text.insert('1.0', '\n')
+            text.insert('1.0', list(json[i].items())[2])
+    else:
+        text.insert('1.0',k)
+Button(root, text="Enter", font=("Arial Bold", 8), command=clicked, fg='#8B0000', bg='#CD5C5C',width=24, height=1,).place(x = 700, y = 50)
 Button(root, text="Restart(такая большая, что-бы видно было))", font=("Arial Bold", 23), command=restart_program, fg='#ffffff', bg='#041f3a',width=40, height=10,).place(x = 690, y = 400)
 root.mainloop()
