@@ -9,6 +9,7 @@
 ![image](https://user-images.githubusercontent.com/75033218/123309631-d6dd3d00-d52d-11eb-92f7-4156cbe31195.png)
 ![image](https://user-images.githubusercontent.com/75033218/123309691-eb213a00-d52d-11eb-8814-b0f07cb73273.png)
 І так далі
+
 Створюю папку та файл, заношу туди написану програму, додаю коміти та пушу.
 ![image](https://user-images.githubusercontent.com/75033218/123309453-9c73a000-d52d-11eb-8c92-a8ca367eb2bf.png)
 Сподіваюсь що все практично добре))))
